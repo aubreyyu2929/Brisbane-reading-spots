@@ -18,6 +18,7 @@ body {
 
 header {
 	position: fixed;
+	top: 0;
 	background-color: #f8f8f3;
 	color: white;
 	width: 100%;
@@ -63,26 +64,6 @@ body.collection header {
 	width: 100%;
 }
 
-/* #headnav ul, nav li {
-	margin: 0;
-	padding: 0;
-}
-
-#headnav li {
-	display: inline-block;
-	list-style: none;
-	margin-right: 50px;
-}
-
-#headnav a {
-	color: black;
-	display: block;
-	padding: 10px;
-	text-decoration: none;
-	border: 1px solid white;
-	font-weight: bold;
-} */
-
 #headnav ul{
     display: flex;
     justify-content: center;
@@ -103,7 +84,7 @@ body.collection header {
     -webkit-transition: color 1s, background-color 0.5s;
 }
 
-#footnav a:hover{
+#headnav a:hover{
     color:aliceblue;
     background-color:#323941;
 
@@ -113,8 +94,16 @@ body.collection header {
 	background: #323941;
 }
 
+/*main*/
 main {
+	position: absolute;
+	top: 20%;
+	z-index: -1;
+	width: 100%;
 	float: left;
+	padding: 2em;
+	justify-content: center;
+	align-items: center;
 }
 
 article {
@@ -127,11 +116,78 @@ h1 {
 	color: red;
 }
 
-aside {
-	float: left;
-	width: 30%;
+#records {
+	width: 100%;
 }
 
+.record {
+	border: 2px solid orange;
+	padding: 1em;
+	margin-top: 1em;
+	width:40%;
+	height: 200px;
+	float: left;
+	margin-right: 2em;
+	justify-content: space-evenly;
+}
+
+.record .libCover {
+	width: 100px;
+	height: 100px;
+}
+
+/* #loading{
+	background-image: white;
+	margin:0 0;
+	transition:all 0.5s ease;
+}
+
+body .loaded #loading{
+	opacity: 0;
+	visibility: hidden; 
+} */
+
+.slidecontainer {
+	width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+	-webkit-appearance: none;  /* Override default CSS styles */
+	appearance: none;
+	width: 85%; /* Full-width */
+	height: 25px; /* Specified height */
+	background: #d3d3d3; /* Grey background */
+	outline: none; /* Remove outline */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+	opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 20px; /* Set a specific slider handle width */
+	height: 40px; /* Slider handle height */
+	background: #4CAF50; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+	width: 20px; /* Set a specific slider handle width */
+	height: 40px; /* Slider handle height */
+	background: #4CAF50; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+  }
+
+
+/*footer*/
 footer {
 	background: #bbb;
 	text-align: center;

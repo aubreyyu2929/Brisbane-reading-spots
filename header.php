@@ -18,8 +18,6 @@
 				<h2 id='userLocation'>Location</h1>
 			</div>
 			
-		
-
 			<nav id='headnav'>
 				<ul>
 					<li <?php if ($activePage == "foryou") {echo "class='active'";}?>>
