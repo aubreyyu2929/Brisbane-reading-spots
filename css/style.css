@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: black;
+	background: white;
+}
+
+header, nav, article, aside, footer {
+	padding: 25px 50px;
+}
+
+header {
+	background: yellow;
+	font-size: 2em;
+	line-height: 1.5em;
+	color: white;
+}
+
+body.index header {
+	background-color: red;
+}
+
+body.contact header {
+	background-color: green;
+}
+
+nav {
+	background: pink;
+}
+
+nav ul, nav li {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 50px;
+}
+
+nav a {
+	color: black;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	border: 1px solid white;
+	font-weight: bold;
+}
+
+nav li.active a {
+	background: white;
+}
+
+main {
+	overflow: hidden;
+	background: lightblue;
+}
+
+article {
+	background: lightgreen;
+	float: left;
+	width: 70%;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1.5em;
+	color: red;
+}
+
+aside {
+	float: left;
+	width: 30%;
+}
+
+footer {
+	background: #bbb;
+	text-align: center;
+}

@@ -1,0 +1,177 @@
+* {
+	/* box-sizing: border-box; */
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: black;
+	background: #f8f8f3;
+}
+
+/* header, nav, article, aside {
+	padding: 25px 50px;
+} */
+
+header {
+	position: fixed;
+	background-color: #f8f8f3;
+	color: white;
+	width: 100%;
+}
+
+#topbar {
+	width: 100%;
+	float: left;
+	padding-left: 5%;
+	padding-top: 2%;
+	padding-bottom:2%; 
+}
+
+#userLocation {
+	line-height: 40px;
+	font-size: 22px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	background-color: #87a8b7;
+	border-radius: 4px;
+	float: left;
+}
+
+/* body.foryou header {
+	background-color: red;
+}
+
+body.event header {
+	background-color: green;
+}
+
+body.collection header {
+	background-color: gray;
+} */
+
+/*head nav*/
+#headnav {
+	float: left;
+	background: #1f556d;
+	font-size: 18px;
+	justify-content: center;
+	width: 100%;
+}
+
+/* #headnav ul, nav li {
+	margin: 0;
+	padding: 0;
+}
+
+#headnav li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 50px;
+}
+
+#headnav a {
+	color: black;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	border: 1px solid white;
+	font-weight: bold;
+} */
+
+#headnav ul{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+#headnav ul li{
+    list-style: none;
+    width: 33.3%;
+    text-align: center;
+}
+
+#headnav a{
+    display: block;
+	color: #f8f8f3;
+	padding: 0.6em;
+	text-decoration: none;
+	font-weight: bold;
+    -webkit-transition: color 1s, background-color 0.5s;
+}
+
+#footnav a:hover{
+    color:aliceblue;
+    background-color:#323941;
+
+}
+
+#headnav li.active a {
+	background: #323941;
+}
+
+main {
+	float: left;
+}
+
+article {
+	width: 100%;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1.5em;
+	color: red;
+}
+
+aside {
+	float: left;
+	width: 30%;
+}
+
+footer {
+	background: #bbb;
+	text-align: center;
+}
+
+/*footer-nav*/
+#footnav{
+    background:#1f556d;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    justify-content: center;
+}
+
+#footnav ul{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+#footnav ul li{
+    list-style: none;
+    width: 33.3%;
+    text-align: center;
+}
+
+#footnav a{
+    display: block;
+    height: 100%;
+	color: #f8f8f3;
+	padding: 0.6em;
+	text-decoration: none;
+	font-weight: bold;
+    -webkit-transition: color 1s, background-color 0.5s;
+}
+
+#footnav a:hover{
+    color:aliceblue;
+    background-color:#323941;
+
+}
