@@ -2,6 +2,7 @@ var slider = document.getElementById("myRange");
 var output = document.getElementById("sliderDist");
 var sliderValue = slider.value;
 output.innerHTML = slider.value;
+var clicked = "";
 
 slider.oninput = function() {
   output.innerHTML = this.value;
@@ -9,10 +10,12 @@ slider.oninput = function() {
 }
 
 function goLib() {
-	window.location.href='library.html';
-	$("#libDetail").append(
-		$('<div>').text('libraryName')
-	)
+	// window.onload = $("#libDetail").append(
+	// 	$('<div>').text('libraryName')
+	// )
+	clicked = event.target.id;
+	console.log(clicked);
+	// window.location.replace("library.html");
 }
 
 //GPS mode to get the current location of the user
@@ -91,7 +94,7 @@ function iterateRecords(data) {
 		if(recordTitle) {
 			if(154> parseFloat(recordLon)&&parseFloat(recordLon)>152.5 && -26.5>parseFloat(recordLat)&&parseFloat(recordLon)>-28){//distance:185614.2345889979 metres
 				$("#records").append(
-					$('<button class="record">').append(
+					$('<button class="record" id="'+recordTitle+'">').append(
 							// $('<img src="'+recordTitle+'.png">'),
 							$('<img src="logo.png" class="libCover">'),
 							$('<h2>').text(recordTitle),
@@ -104,7 +107,10 @@ function iterateRecords(data) {
 							$('<p>').text(recordDescription)
 					)
 				);
+				console.log("generate 1")
+				console.log(recordTitle);
 				$("button.record").attr('onclick','goLib()');
+				// $("button.record").attr('id',recordTitle);
 			}
 		}
 		
