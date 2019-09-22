@@ -2,6 +2,8 @@ var slider = document.getElementById("myRange");
 var output = document.getElementById("sliderDist");
 var sliderValue = slider.value;
 output.innerHTML = slider.value;
+// var chosenresult = clicked;
+// console.log(chosenresult);
 
 slider.oninput = function() {
   output.innerHTML = this.value;
