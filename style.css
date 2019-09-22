@@ -104,12 +104,10 @@ main {
 	padding: 2em;
 	justify-content: center;
 	align-items: center;
-	background-color: red;
 }
 
 article {
 	width: 100%;
-	background-color: red;
 }
 
 h1 {

@@ -15,6 +15,11 @@ function goLib() {
 	// )
 	clicked = event.target.id;
 	console.log(clicked);
+	$("#filter-text").attr("value",clicked);
+	console.log("done");
+	$(".record").hide();
+	$(".record:contains('" + clicked + "')").show();
+	$(".record:contains('" + clicked + "') h3").show();
 	// window.location.replace("library.html");
 }
 
@@ -101,15 +106,16 @@ function iterateRecords(data) {
 							// $('<h3>').text(recordLon),
 							// $('<h3>').text(recordLat),
 							$('<h1>').text(dis+'KM'), //distance from user's location to the library (km)
-							// $('<h3>').text(openingHoursRegular),
-							// $('<h3>').text(openingHoursSat),
-							// $('<h3>').text(openingHoursSun),
+							$('<h3>').text("regular"+openingHoursRegular),
+							$('<h3>').text("Sat"+openingHoursSat),
+							$('<h3>').text("Sun"+openingHoursSun),
 							$('<p>').text(recordDescription)
 					)
 				);
+				$(".record h3").hide();
 				console.log("generate 1")
 				console.log(recordTitle);
-				$("button.record").attr('onclick','goLib()');
+				$(".record").attr('onclick','goLib()');
 				// $("button.record").attr('id',recordTitle);
 			}
 		}
