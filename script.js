@@ -15,11 +15,14 @@ function goLib() {
 	// )
 	clicked = event.target.id;
 	console.log(clicked);
-	$("#filter-text").attr("value",clicked);
-	console.log("done");
-	$(".record").hide();
-	$(".record:contains('" + clicked + "')").show();
-	$(".record:contains('" + clicked + "') h3").show();
+	if (clicked !== "") {
+		$("#filter-text").attr("value",clicked);
+		console.log("done");
+		$(".record").hide();
+		$(".record:contains('" + clicked + "')").show();
+		// $(".record:contains('" + clicked + "')").attr("width","100%");
+		$(".record:contains('" + clicked + "') h3").show();
+	}
 	// window.location.replace("library.html");
 }
 
