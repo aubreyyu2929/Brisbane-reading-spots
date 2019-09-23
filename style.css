@@ -99,9 +99,8 @@ main {
 	position: absolute;
 	top: 20%;
 	z-index: -1;
-	width: 100%;
-	float: left;
-	padding: 2em;
+	width: 90%;
+	margin: 2em;
 	justify-content: center;
 	align-items: center;
 }
@@ -121,11 +120,12 @@ h1 {
 }
 
 .record {
+	position: relative;
+	z-index: 999;
 	border: 2px solid orange;
 	padding: 1em;
 	margin-top: 1em;
-	width:40%;
-	height: 200px;
+	width:80%;
 	float: left;
 	margin-right: 2em;
 	justify-content: space-evenly;
