@@ -231,3 +231,7 @@ footer {
     background-color:#323941;
 
 }
+
+#footnav li.active a {
+	background: #323941;
+}
