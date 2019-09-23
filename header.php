@@ -10,8 +10,10 @@
 
 	</head>
 
-	<body <?php if ($activePage == "foryou") {echo "class='foryou'";} else if ($activePage == "event") {echo "class='event'";}
-	else if ($activePage == "collection") {echo "class='collection'";}?>>
+	<body <?php if ($activePage == "foryou") {echo "class='foryou'";} 
+	else if ($activePage == "event") {echo "class='event'";}
+	else if ($activePage == "collection") {echo "class='collection'";}
+	?>>
 
 		<header>
 			<div id="topbar">
