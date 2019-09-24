@@ -24,6 +24,10 @@ header {
 	width: 100%;
 }
 
+#search-head {
+	color: black;
+}
+
 #topbar {
 	width: 100%;
 	float: left;
@@ -41,6 +45,12 @@ header {
 	background-color: #87a8b7;
 	border-radius: 4px;
 	float: left;
+}
+
+#filter-text {
+	width: 100%;
+	margin: 10px 10px 10px 10px;
+	font-size: 20px;
 }
 
 /* body.foryou header {
@@ -122,10 +132,10 @@ h1 {
 .record {
 	position: relative;
 	z-index: 999;
-	border: 2px solid orange;
+	border: 2px solid #87a8b7;
 	padding: 1em;
 	margin-top: 1em;
-	width:80%;
+	width:90%;
 	float: left;
 	margin-right: 2em;
 	justify-content: space-evenly;

@@ -1,13 +1,13 @@
-var slider = document.getElementById("myRange");
-var output = document.getElementById("sliderDist");
-var sliderValue = slider.value;
-output.innerHTML = slider.value;
+// var slider = document.getElementById("myRange");
+// var output = document.getElementById("sliderDist");
+// var sliderValue = slider.value;
+// output.innerHTML = slider.value;
 var clicked = "";
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
-  sliderValue=this.value;
-}
+// slider.oninput = function() {
+//   output.innerHTML = this.value;
+//   sliderValue=this.value;
+// }
 
 function goLib() {
 	// window.onload = $("#libDetail").append(
@@ -126,26 +126,26 @@ function iterateRecords(data) {
 
 	});
 
-	$("#filter-text").keyup(function() {
+	// $("#filter-text").keyup(function() {
  
-		var searchTerm = $(this).val();
-		console.log(searchTerm);
+	// 	var searchTerm = $(this).val();
+	// 	console.log(searchTerm);
 	
-		$(".record").hide();
-		$(".record:contains('" + searchTerm + "')").show();
+	// 	$(".record").hide();
+	// 	$(".record:contains('" + searchTerm + "')").show();
 	
-		$("#filter-count strong").text($(".record:visible").length);
+	// 	$("#filter-count strong").text($(".record:visible").length);
 	
-	});
+	// });
 
 	
-	$("#myRange").oninput(function() {
+	// $("#myRange").oninput(function() {
 	
-		$(".record").hide();
-		if(this.dis<sliderValue){
-			$(".record").show();// how to  select the records where the attr(dis) are greater than slider.value?
-		}
-	});
+	// 	$(".record").hide();
+	// 	if(this.dis<sliderValue){
+	// 		$(".record").show();// how to  select the records where the attr(dis) are greater than slider.value?
+	// 	}
+	// });
 
 }
 
