@@ -1,7 +1,8 @@
 .record {
-	border: 2px solid orange;
+	border: 2px solid #87a8b7;
 	padding: 1em;
 	margin-top: 1em;
+	width: 90%;
 }
 
 #loading{
@@ -15,6 +16,9 @@ body .loaded #loading{
 	visibility: hidden; 
 }
 
+#filter-text {
+	width: 100%;
+}
 .slidecontainer {
 	width: 100%; /* Width of the outside container */
   }
@@ -25,7 +29,7 @@ body .loaded #loading{
 	appearance: none;
 	width: 85%; /* Full-width */
 	height: 25px; /* Specified height */
-	background: #d3d3d3; /* Grey background */
+	background: #333333; /* Grey background */
 	outline: none; /* Remove outline */
 	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
 	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
