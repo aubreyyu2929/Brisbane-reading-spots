@@ -1,4 +1,252 @@
 
+* {
+	/* box-sizing: border-box; */
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: black;
+	background: #f8f8f3;
+}
+
+/* header, nav, article, aside {
+	padding: 25px 50px;
+} */
+
+header {
+	position: fixed;
+	top: 0;
+	background-color: #f8f8f3;
+	color: white;
+	width: 100%;
+	justify-content: center;
+}
+
+#search-head {
+	color: black;
+}
+
+#topbar {
+	width: 100%;
+	float: left;
+	padding-left: 5%;
+	padding-top: 2%;
+	padding-bottom:2%; 
+}
+
+#userLocation {
+	line-height: 40px;
+	font-size: 22px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	background-color: #87a8b7;
+	border-radius: 4px;
+	float: left;
+}
+
+#filter-text {
+	width: 100%;
+	margin: 10px 10px 10px 10px;
+	font-size: 20px;
+}
+
+/* body.foryou header {
+	background-color: red;
+}
+
+body.event header {
+	background-color: green;
+}
+
+body.collection header {
+	background-color: gray;
+} */
+
+/*head nav*/
+#headnav {
+	float: left;
+	background: #1f556d;
+	font-size: 18px;
+	justify-content: center;
+	width: 100%;
+}
+
+#headnav ul{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+#headnav ul li{
+    list-style: none;
+    width: 33.3%;
+    text-align: center;
+}
+
+#headnav a{
+    display: block;
+	color: #f8f8f3;
+	padding: 0.6em;
+	text-decoration: none;
+	font-weight: bold;
+    -webkit-transition: color 1s, background-color 0.5s;
+}
+
+#headnav a:hover{
+    color:aliceblue;
+    background-color:#323941;
+
+}
+
+#headnav li.active a {
+	background: #323941;
+}
+
+/*main*/
+main {
+	position: absolute;
+	top: 20%;
+	z-index: -1;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+article {
+	width: 100%;
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1.5em;
+	color: red;
+}
+
+#records {
+	width: 100%;
+	display: flex;
+}
+
+.record {
+	position: relative;
+	z-index: 999;
+	border: 2px solid #87a8b7;
+	padding: 1em;
+	margin-top: 1em;
+	width:100%;
+	margin-right: 2em;
+	justify-content: space-evenly;
+}
+
+.record .libCover {
+	width: 100px;
+	height: 100px;
+}
+
+/* #loading{
+	background-image: white;
+	margin:0 0;
+	transition:all 0.5s ease;
+}
+
+body .loaded #loading{
+	opacity: 0;
+	visibility: hidden; 
+} */
+
+.slidecontainer {
+	width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+	-webkit-appearance: none;  /* Override default CSS styles */
+	appearance: none;
+	width: 85%; /* Full-width */
+	height: 25px; /* Specified height */
+	background: #d3d3d3; /* Grey background */
+	outline: none; /* Remove outline */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+	opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 20px; /* Set a specific slider handle width */
+	height: 40px; /* Slider handle height */
+	background: #4CAF50; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+	width: 20px; /* Set a specific slider handle width */
+	height: 40px; /* Slider handle height */
+	background: #4CAF50; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+  }
+
+
+/*footer*/
+footer {
+	background: #bbb;
+	text-align: center;
+}
+
+/*footer-nav*/
+#footnav{
+    background:#1f556d;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    justify-content: center;
+}
+
+#footnav ul{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+#footnav ul li{
+    list-style: none;
+    width: 33.3%;
+    text-align: center;
+}
+
+#footnav a{
+    display: block;
+    height: 100%;
+	color: #f8f8f3;
+	padding: 0.6em;
+	text-decoration: none;
+	font-weight: bold;
+    -webkit-transition: color 1s, background-color 0.5s;
+}
+
+#footnav a:hover{
+    color:aliceblue;
+    background-color:#323941;
+
+}
+
+#footnav li.active a {
+	background: #323941;
+
 .grade span {
     margin-left: 15px;
     line-height: 30px;
@@ -271,7 +519,6 @@ footer {
 
 #footnav li.active a {
 	background: #323941;
-=======
 * {
 	/* box-sizing: border-box; */
 	margin: 0;
