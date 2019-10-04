@@ -9,6 +9,45 @@ slider.oninput = function() {
   sliderValue=this.value;
 }
 
+function halfStar(x) {
+    var star = document.getElementById('star');
+    var items = star.getElementsByTagName("li");
+    x = parseInt(x) - 1;
+    var tem = -1;
+    for(var i = 0; i < items.length; i++) {
+        if(x > i*2) {
+            items[i].style.background = "url('full.png') no-repeat";
+			items[i].style.backgroundSize = "100% 100%";
+			document.getElementById('getgrade').innerHTML = (parseInt(x)+1)/2+'.0';
+        } else {
+            if(tem == -1) {
+                tem = i;
+            } 
+            items[i].style.background = "url('empty.png') no-repeat";
+			items[i].style.backgroundSize = "100% 100%";
+			document.getElementById('getgrade').innerHTML = (parseInt(x)+1)/2+'.0';
+        }
+    }
+    if(x == parseInt(tem)*2) {
+        items[tem].style.background = "url('half.png') no-repeat";
+		items[tem].style.backgroundSize = "100% 100%";
+		document.getElementById('getgrade').innerHTML = (parseInt(x)+1)/2;
+	}
+	
+	$("button").click(function() {
+		var btn1 = document.getElementById("sure");
+		btn1.onclick =function(){
+			halfStar((8*1+x+1)/2);
+		}
+	
+		var btn2 = document.getElementById("cancel");
+		btn2.onclick =function(){
+			halfStar(0);
+		}
+	});
+    
+}
+
 function goLib() {
 	// window.onload = $("#libDetail").append(
 	// 	$('<div>').text('libraryName')
