@@ -14,7 +14,7 @@ include("header.php"); ?>
 			<input type="range" min="1" max="200" value="200" class="slider" id="myRange">
 		</div>
 		<p>Distance within: <span id="sliderDist"></span> Km</p> -->
-		<h1>Records from SLQ</h1>
+		<!-- <h1>Records from SLQ</h1> -->
 		<section id="records"></section>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="script.js"></script>

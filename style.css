@@ -22,6 +22,7 @@ header {
 	background-color: #f8f8f3;
 	color: white;
 	width: 100%;
+	justify-content: center;
 }
 
 #search-head {
@@ -109,10 +110,10 @@ main {
 	position: absolute;
 	top: 20%;
 	z-index: -1;
-	width: 90%;
-	margin: 2em;
+	width: 100%;
 	justify-content: center;
 	align-items: center;
+	display: flex;
 }
 
 article {
@@ -127,6 +128,7 @@ h1 {
 
 #records {
 	width: 100%;
+	display: flex;
 }
 
 .record {
@@ -135,8 +137,7 @@ h1 {
 	border: 2px solid #87a8b7;
 	padding: 1em;
 	margin-top: 1em;
-	width:90%;
-	float: left;
+	width:100%;
 	margin-right: 2em;
 	justify-content: space-evenly;
 }
