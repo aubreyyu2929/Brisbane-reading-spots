@@ -1,3 +1,39 @@
+.grade span {
+    margin-left: 15px;
+    line-height: 30px;
+}
+.star {
+    width: 100%;
+    height: 45%;
+}
+#star {
+    width: 50%;
+    height: 70%;
+    padding: 0;
+    margin: 0 25%;
+}
+#star li {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("empty.png") no-repeat;
+}
+#star li a {
+    height: 20px;
+    width: 10px;
+    display: inline-block;
+    float: left;
+}
+.sure {
+    width: 100%;
+    height: 30%;
+}
+.sure button {
+    margin-right: 10px;
+    float: right;
+}
+
+
 * {
 	/* box-sizing: border-box; */
 	margin: 0;
